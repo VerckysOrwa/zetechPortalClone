@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="portal.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script>const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
+</script>
+  </head>
+  <body>
+    <header>
+      <section class="hamburger">
+        <i class="fas fa-bars"></i>
+        </section>
+    </header>
+<div class="body">
+
+    <div class="sidebar">
+      <section id="sbComponents">
+        <img src="Zetech_University_Logo.pdf_ba4c.jpg" alt="image unavailable" />
+        <ul class="links" type="none">
+           <a href="#"><li><i class="fas fa-home"></i>Home</li>
+          <a href="#"><li><i  class="fas fa-calendar-alt"></i>News & Events</li></a>
+          <a href="#"><li><i class="fas fa-clock"></i>Reporting</li></a>
+          <a href="#"><li><i class="fas fa-money-bill-alt"></i>Fees</li></a>
+          <a href="#"><li><i class="fas fa-book"></i>Units</li></a>
+          <a href="#"><li><i class="fas fa-graduation-cap"></i>Examinations</li></a>
+          <a href="#"><li><i class="fas fa-comments"></i>Messages</li></a>
+          <a href="#"><li><i class="fas fa-folder-open"></i>Repository</li></a>
+          <a href="#"><li><i class="fas fa-clock"></i>Evaluation</li></a>
+        </ul>
+      </section>
+    </div>
+
+<div class="middle">
+
+    <div class="news"> 
+      <section>
+        <h2>Latest News</h2> <hr>
+      </section>
+    </div>
+
+    <div class="units"> 
+      <section>
+        <h4>Current Registered Units</h4>
+      <table cellpadding="50" cellspacing="10">
+
+        <tr>
+          <th>Unit Name</th>
+          <th id="unitCodeTitle">Unit Code</th>
+          <th id="statusTitle">Status</th>
+        </tr>
+
+        <td><ul type="none" id="units">
+          <li>Computer Security</li>
+          <li>Entrepreneurship Skills</li>
+          <li>Industrial Attachment</li>
+          <li>Artificial Intelligence</li>
+          <li>Data Structures & Algorithms</li>
+          <li>Web Development II</li>
+          <li>Research Project(Final Project)</li>
+        </ul>
+      </td>
+
+<td>
+  <ul type="none" id="unitCode">
+    <li>DCS 504</li>
+    <li>DCU 102</li>
+    <li>DCU 300</li>
+    <li>DSE 501</li>
+    <li>DSE 502</li>
+    <li>DSE 505</li>
+    <li>DSE 506</li>
+  </ul>
+</td>
+
+<td>
+  <ul type="none" >
+    <li id="status">Approved</li>
+    <li id="status">Approved</li>
+    <li id="status">Approved</li>
+    <li id="status">Approved</li>
+    <li id="status">Approved</li>
+    <li id="status">Approved</li>
+    <li id="status">Approved</li> 
+  </ul>
+  <a href="#" id="unitsLink">Units Section</a>
+
+</td>
+      </table><!--tommorrow:weka lines kwa table-->
+      </section>
+</div>
+
+    <div class="events"> 
+      <section>
+        <h2>Latest Events</h2> <hr>
+      </section>
+    </div>
+
+   </div>
+
+
+    <div class="right">
+    <div class="balance"> 
+      <section>
+        <h2>Your Fee Balance is:</h2><br>
+        <h1>KES 0.00</h1>
+      </section>
+    </div>
+
+    <div class="hostelInfo"> 
+      <section>
+        <h2>Current Hostel <br><h2>No hostel History</h2>
+        
+      </section>
+    </div>
+    
+    </div>
+  </body>
+</html>
