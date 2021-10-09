@@ -294,6 +294,10 @@ header #dropdo {
   cursor: pointer;
 }
 
+.sidebar .links .fas:hover {
+  color: white;
+}
+
 .sidebar .links .fas {
   margin-right: 1em;
   color: black;
@@ -303,10 +307,14 @@ header #dropdo {
 .sidebar .links a {
   color: grey;
   text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .sidebar .links a:hover {
   color: white;
+  margin-left: -1em;
 }
 
 .sidebar .links li {

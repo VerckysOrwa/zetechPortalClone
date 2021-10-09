@@ -11,6 +11,11 @@ let hamburger=document.getElementById("hamburgerIcon");
 hamburger.style.marginLeft="-100%";   
 hamburger.style.transition="600ms";   
 
+let sidebarIcons=document.querySelectorAll(".sidebarIcons");
+sidebarIcons.forEach((icon)=>{
+icon.style.textAlign="center";
+icon.style.color="red";
+});
 }
 
 const slideOut=()=>{
@@ -22,6 +27,11 @@ const slideOut=()=>{
     } 
     let hamburger=document.getElementById("hamburgerIcon");
    hamburger.style.marginLeft="0em";   
-   hamburger.style.transition="200ms";   
+   hamburger.style.transition="200ms";  
 
+   let sidebarIcons=document.querySelectorAll(".sidebarIcons");
+   sidebarIcons.forEach((icon)=>{
+   icon.style.textAlign="center";
+   icon.style.color="#373737";
+   });
 }
