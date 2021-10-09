@@ -56,9 +56,9 @@ require("firebase/firestore");
     <div class="units"> 
       <section>
         <section id="registeredUnitsHeading">      
-            <p>Current Registered Units</p><i id="leftangle" class="fas fa-angle-left"></i>
+            <p>Current Registered Units</p><i id="leftangle" class="fas fa-angle-left" onclick="unitsDropDown()" onmouseover="unitsUp()"></i>
         </section>
-      <table cellpadding="50" cellspacing="10">
+      <table class="table"cellpadding="50" cellspacing="10">
 
         <tr>
           <th>Unit Name</th>
@@ -102,7 +102,7 @@ require("firebase/firestore");
   <a href="#" id="unitsLink">Units Section</a>
 
 </td>
-      </table><!--tommorrow:weka lines kwa table-->
+      </table>
       </section>
 </div>
 

@@ -35,3 +35,27 @@ const slideOut=()=>{
    icon.style.color="#373737";
    });
 }
+
+
+const unitsDropDown=()=>{   
+    
+let downAngle=document.getElementsByClassName("units");
+for(i=0;i<downAngle.length;i++){
+    downAngle[i].style.height="10%";
+}
+let events=document.getElementsByClassName("events");
+for(e=0;e<events.length;e++){
+    events[e].style.marginTop="-50%"
+}
+}
+
+const unitsUp=()=>{
+    let downAngle=document.getElementsByClassName("units");
+    for(i=0;i<downAngle.length;i++){
+        downAngle[i].style.height="27em";
+    }
+    let events=document.getElementsByClassName("events");
+    for(e=0;e<events.length;e++){
+        events[e].style.marginTop="+5%"
+    } 
+}
