@@ -196,7 +196,7 @@ header #dropdo {
   top: +1em;
 }
 
-.body .right .balance .far, .body .right .hostelInfo .far {
+.body .right .balance .far, .body .right .hostelInfo .far, .body .right .balance .fas, .body .right .hostelInfo .fas {
   font-size: 4em;
   width: 1%;
   color: #f8f4f4;
