@@ -141,6 +141,7 @@ header #dropdo {
   position: absolute;
   margin: 1em 0em 0em 7em;
   font-size: 9.4pt;
+  color: #64b5f6;
 }
 
 .body .middle .units table, .body .right .units table {
@@ -153,6 +154,10 @@ header #dropdo {
 .body .middle .units table ul, .body .right .units table ul {
   margin-left: +1em;
   color: grey;
+}
+
+.body .middle .units table li:hover, .body .right .units table li:hover {
+  background: #a6cff3ce;
 }
 
 .body .middle .units table tr, .body .right .units table tr {
