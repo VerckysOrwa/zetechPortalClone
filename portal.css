@@ -24,6 +24,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header .hamburger {
@@ -31,6 +32,16 @@ header .hamburger {
   width: 10em;
   color: white;
   margin-left: 15%;
+}
+
+header .studentProfile {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+  font-size: 11pt;
+  margin-left: 65%;
+  cursor: pointer;
 }
 
 header #dropdown {
@@ -145,7 +156,7 @@ header #dropdo {
   font-size: 10pt;
   width: 50%;
   text-align: justify;
-  background: #ffcc33;
+  background: #ffb74d;
   color: white;
   margin: 0.7em;
   outline: none;
@@ -179,10 +190,41 @@ header #dropdo {
   width: 29em;
   height: 7em;
   text-align: center;
-  background: #ffcc33;
+  background: #ffb74d;
   color: white;
   margin: 0;
   top: +1em;
+}
+
+.body .right .balance .far, .body .right .hostelInfo .far {
+  font-size: 4em;
+  width: 1%;
+  color: #f8f4f4;
+  top: -2%;
+}
+
+.body .right .balance .farHolder:hover, .body .right .hostelInfo .farHolder:hover {
+  -webkit-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  font-size: 1.5em;
+}
+
+.body .right .balance .farHolder, .body .right .hostelInfo .farHolder {
+  -webkit-transform: rotateZ(28deg);
+          transform: rotateZ(28deg);
+  margin: 0;
+  top: +29%;
+  overflow: hidden;
+  left: -25%;
+  width: 50%;
+  height: 3.8em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: absolute;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .body .right .hostelInfo {
@@ -398,11 +440,12 @@ footer {
   font-size: 10pt;
 }
 
-.passRecovery a{
+.passRecovery a {
   text-decoration: none;
   color: #64b5f6;
 }
-.passRecovery a:hover{
-  color: #003c8f ;
+
+.passRecovery a:hover {
+  color: #003c8f;
 }
 /*# sourceMappingURL=portal.css.map */
