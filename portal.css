@@ -1,0 +1,490 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #eceff1;
+}
+
+header {
+  background: #002171;
+  height: 3em;
+  width: 99.99vw;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header .hamburger {
+  cursor: pointer;
+  width: 10em;
+  color: white;
+  margin-left: 15%;
+}
+
+header .studentProfile {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+  font-size: 11pt;
+  margin-left: 65%;
+  cursor: pointer;
+}
+
+header #dropdown {
+  position: absolute;
+  top: 1em;
+  color: white;
+}
+
+header #dropdow, header #dropdo {
+  color: white;
+  margin-top: +0.8em;
+  position: absolute;
+}
+
+header #dropdo {
+  top: -0.2em;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.body .middle, .body .right {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  top: -1em;
+  width: 40pc;
+  background: transparent;
+  margin: 7% 0pc 0pc 18%;
+  height: 85vh;
+  overflow: scroll;
+  position: absolute;
+  font-size: 12pt;
+}
+
+.body .middle .news, .body .right .news, .body .middle .units, .body .right .units, .body .middle .events, .body .right .events, .body .right .balance, .body .right .hostelInfo {
+  margin: 0em 0em 0em 1em;
+  height: 6em;
+  width: 95%;
+  background: white;
+  position: absolute;
+  border-radius: 0.4em;
+}
+
+.body .middle .news h2, .body .right .news h2, .body .middle .units h2, .body .right .units h2, .body .middle .events h2, .body .right .events h2, .body .right .balance h2, .body .right .hostelInfo h2 {
+  font-size: 12pt;
+  margin: 1em 0em 0em 1em;
+}
+
+.body .middle .news hr, .body .right .news hr, .body .middle .units hr, .body .right .units hr, .body .middle .events hr, .body .right .events hr, .body .right .balance hr, .body .right .hostelInfo hr {
+  margin-top: 1.4em;
+  color: grey;
+}
+
+.body .middle .units, .body .right .units {
+  top: 8em;
+  height: 27em;
+  font-size: 12pt;
+  text-align: left;
+  overflow: scroll;
+}
+
+.body .middle .units #registeredUnitsHeading, .body .right .units #registeredUnitsHeading {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: +1em;
+  color: #212121;
+}
+
+.body .middle .units #registeredUnitsHeading #leftangle, .body .right .units #registeredUnitsHeading #leftangle {
+  font-size: 15pt;
+  cursor: pointer;
+  left: -5%;
+}
+
+.body .middle .units h4, .body .right .units h4 {
+  margin: 2em;
+  font-size: 11pt;
+}
+
+.body .middle .units table li, .body .right .units table li {
+  margin: 1em;
+}
+
+.body .middle .units #unitsLink, .body .right .units #unitsLink {
+  position: absolute;
+  margin: 1em 0em 0em 7em;
+  font-size: 9.4pt;
+  color: #64b5f6;
+}
+
+.body .middle .units table, .body .right .units table {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 11.5pt;
+  margin: 1.8em 0em 0em 1.8em;
+  position: relative;
+}
+
+.body .middle .units table ul, .body .right .units table ul {
+  margin-left: +1em;
+  color: grey;
+}
+
+.body .middle .units table li:hover, .body .right .units table li:hover {
+  background: #a6cff3ce;
+}
+
+.body .middle .units table tr, .body .right .units table tr {
+  margin: 0;
+}
+
+.body .middle .units table tr #status, .body .right .units table tr #status {
+  margin-left: 5em;
+}
+
+.body .middle .units table tr th, .body .right .units table tr th {
+  margin: 5em;
+}
+
+.body .middle .units table #units, .body .right .units table #units {
+  margin: 0em;
+  position: relative;
+}
+
+.body .middle .units table #status, .body .right .units table #status {
+  border: 2px solid;
+  border-radius: 0.4em;
+  font-size: 10pt;
+  width: 50%;
+  text-align: justify;
+  background: #ffb74d;
+  color: white;
+  margin: 0.7em;
+  outline: none;
+  height: 1.8em;
+}
+
+.body .middle .units table #statusTitle, .body .right .units table #statusTitle {
+  position: absolute;
+  top: -4.5em;
+  right: -3em;
+}
+
+.body .middle .units table #unitCodeTitle, .body .right .units table #unitCodeTitle {
+  left: +2em;
+  position: relative;
+}
+
+.body .middle .events, .body .right .events {
+  top: +36em;
+}
+
+.body .right {
+  background: transparent;
+  position: absolute;
+  margin-left: 65%;
+  width: 34%;
+  top: -2.0em;
+}
+
+.body .right .balance, .body .right .hostelInfo {
+  width: 28em;
+  height: 7.5em;
+  text-align: center;
+  background: #ffb74d;
+  color: white;
+  margin: 0;
+  top: +1em;
+  left: +2%;
+  border-radius: 0.4em;
+  overflow: hidden;
+}
+
+.body .right .balance .far, .body .right .hostelInfo .far, .body .right .balance .fas, .body .right .hostelInfo .fas {
+  font-size: 5em;
+  width: 1%;
+  color: #f8f4f4cc;
+}
+
+.body .right .balance .farHolder:hover, .body .right .hostelInfo .farHolder:hover {
+  -webkit-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  font-size: 1.5em;
+}
+
+.body .right .balance .farHolder, .body .right .hostelInfo .farHolder {
+  -webkit-transform: rotateZ(28deg);
+          transform: rotateZ(28deg);
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+  margin: 0;
+  top: +36%;
+  left: -25%;
+  width: 50%;
+  height: 3.8em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: absolute;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.body .right .hostelInfo {
+  top: +10em;
+  background: #1e88e5;
+  text-align: center;
+}
+
+.body .right .hostelInfo h1 {
+  margin-top: +1em;
+}
+
+.sidebar {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 3.5em;
+  width: 17%;
+  height: 88vh;
+  -webkit-box-shadow: 2px 2px 2px 2px white;
+          box-shadow: 2px 2px 2px 2px white;
+  overflow: scroll;
+  background: white;
+  position: absolute;
+  color: grey;
+}
+
+.sidebar img {
+  width: 75%;
+  height: 35%;
+  margin-left: 15%;
+  position: relative;
+  margin-top: 2em;
+  border: 2px solid whitesmoke;
+  cursor: pointer;
+}
+
+.sidebar .links {
+  margin: 2em 1em 0em 0em;
+  font-size: 11pt;
+  cursor: pointer;
+}
+
+.sidebar .links .fas:hover {
+  color: white;
+}
+
+.sidebar .links .fas {
+  margin-right: 1em;
+  color: black;
+  position: relative;
+}
+
+.sidebar .links a {
+  color: grey;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sidebar .links a:hover {
+  color: white;
+  margin-left: -1em;
+}
+
+.sidebar .links li {
+  margin: 1em 2em;
+  height: 2.5em;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .links li:hover {
+  background: #002171;
+  -webkit-box-shadow: 0px 0px 3px 3px grey;
+          box-shadow: 0px 0px 3px 3px grey;
+  border: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 90%;
+}
+
+#loginForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 8pt;
+  background: white;
+  width: 32.4%;
+  height: 48em;
+  text-align: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: grey;
+  -webkit-box-shadow: 0px 0px 0.5px 0.2px grey;
+          box-shadow: 0px 0px 0.5px 0.2px grey;
+  border-radius: 0.5em;
+}
+
+#loginForm img, #loginForm h1, #loginForm h3, #loginForm input {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#loginForm h1, #loginForm h3 {
+  margin: 0.2em;
+  font-weight: 0;
+  text-align: center;
+  font-size: 9.5pt;
+}
+
+#loginForm h1 {
+  font-size: 16pt;
+  color: black;
+}
+
+#loginForm input {
+  height: 2.8em;
+  width: 85%;
+  border: 1px solid grey;
+  outline: none;
+}
+
+button {
+  background: #002171;
+  width: 20%;
+  border: 2px solid;
+  outline: none;
+  border-radius: 2em;
+  height: 3.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  top: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+span {
+  margin: 1em;
+  margin-left: 8%;
+  font-size: 11pt;
+}
+
+.passRecovery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 11pt;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: +2em;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 5em;
+  height: 2em;
+  text-align: center;
+  color: grey;
+}
+
+.formHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.8em;
+}
+
+.input::-webkit-input-placeholder {
+  color: grey;
+  text-align: start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  font-size: 10pt;
+}
+
+.input:-ms-input-placeholder {
+  color: grey;
+  text-align: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  font-size: 10pt;
+}
+
+.input::-ms-input-placeholder {
+  color: grey;
+  text-align: start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  font-size: 10pt;
+}
+
+.input::placeholder {
+  color: grey;
+  text-align: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 10pt;
+}
+
+.passRecovery a {
+  text-decoration: none;
+  color: #64b5f6;
+}
+
+.passRecovery a:hover {
+  color: #003c8f;
+}
+/*# sourceMappingURL=portal.css.map */
