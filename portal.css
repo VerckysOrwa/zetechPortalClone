@@ -107,6 +107,27 @@ header #dropdo {
   text-align: left;
 }
 
+.body .middle .units #registeredUnitsHeading, .body .right .units #registeredUnitsHeading {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: +1em;
+  color: #212121;
+}
+
+.body .middle .units #registeredUnitsHeading #leftangle, .body .right .units #registeredUnitsHeading #leftangle {
+  font-size: 15pt;
+  cursor: pointer;
+  left: -5%;
+}
+
 .body .middle .units h4, .body .right .units h4 {
   margin: 2em;
   font-size: 11pt;
