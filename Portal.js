@@ -42,10 +42,14 @@ const unitsDropDown=()=>{
 let downAngle=document.getElementsByClassName("units");
 for(i=0;i<downAngle.length;i++){
     downAngle[i].style.height="10%";
+    downAngle[i].style.transition="800ms";
+
 }
 let events=document.getElementsByClassName("events");
 for(e=0;e<events.length;e++){
-    events[e].style.marginTop="-50%"
+    events[e].style.marginTop="-50%";
+    events[e].style.transition="800ms"
+
 }
 }
 
@@ -53,9 +57,12 @@ const unitsUp=()=>{
     let downAngle=document.getElementsByClassName("units");
     for(i=0;i<downAngle.length;i++){
         downAngle[i].style.height="27em";
+
     }
     let events=document.getElementsByClassName("events");
     for(e=0;e<events.length;e++){
         events[e].style.marginTop="+5%"
+        events[e].style.transition="800ms"
+
     } 
 }
