@@ -22,7 +22,7 @@ require("firebase/firestore");
         </section>
 
         <section class="studentProfile">
-          Orwa <i class="fas fa-angle-down"></i>
+          <p onclick="showProfile()" onmouseover="hideProfile()">Orwa <i class="fas fa-angle-down"></i></p>
         </section>
       
     </header>
@@ -116,6 +116,16 @@ require("firebase/firestore");
 
 
     <div class="right">
+      <div class="studentInfo">
+        <div id="blank"></div>
+        <section id="studentInfo">
+          <p><i class="fas fa-envelope profileLogos" ></i>My Messages</p>
+          <p><i class="fas fa-user-alt profileLogos " ></i>Profile</p>
+          <p><i class="fas fa-table profileLogos " ></i>Change Password</p>
+          <p><i class="fas fa-lock" ></i>Logout</p>
+        </section>
+      </div>
+   
     <div class="balance"> 
       <section>
         <p class="farHolder"><i class="far fa-newspaper "></i></p>
