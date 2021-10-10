@@ -35,13 +35,18 @@ header .hamburger {
 }
 
 header .studentProfile {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: white;
   font-size: 11pt;
-  margin-left: 65%;
+  margin-left: 70%;
   cursor: pointer;
+  width: 10%;
 }
 
 header #dropdown {
@@ -212,6 +217,57 @@ header #dropdo {
   margin-left: 65%;
   width: 34%;
   top: -2.0em;
+}
+
+.body .right .studentInfo {
+  background: white;
+  position: relative;
+  z-index: 1;
+  width: 60%;
+  top: +2.5%;
+  left: +39%;
+  border-radius: 0.4em;
+  height: 0%;
+  overflow: hidden;
+}
+
+.body .right .studentInfo :nth-of-type(4) {
+  color: red;
+}
+
+.body .right .studentInfo #blank {
+  outline: none;
+  background: white;
+  height: 1.3em;
+  width: 1.3em;
+  -webkit-transform: rotateZ(135deg);
+          transform: rotateZ(135deg);
+  margin: -3.8% 0 0 85%;
+  position: absolute;
+}
+
+.body .right .studentInfo #studentInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 11pt;
+  cursor: pointer;
+}
+
+.body .right .studentInfo #studentInfo :nth-of-type(1):hover {
+  background-color: white;
+}
+
+.body .right .studentInfo #studentInfo .fas {
+  margin: 1em;
+}
+
+.body .right .studentInfo #studentInfo p:hover {
+  background-color: #f5f5f5;
 }
 
 .body .right .balance, .body .right .hostelInfo {
