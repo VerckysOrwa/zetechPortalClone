@@ -258,16 +258,34 @@ header #dropdo {
   cursor: pointer;
 }
 
-.body .right .studentInfo #studentInfo :nth-of-type(1):hover {
+.body .right .studentInfo #studentInfo .firstChild {
+  text-decoration: none;
+  color: black;
+}
+
+.body .right .studentInfo #studentInfo .lastChild {
+  color: red;
+  text-decoration: none;
+}
+
+.body .right .studentInfo #studentInfo .lastChild:hover {
+  background: #e0e0e0;
+}
+
+.body .right .studentInfo #studentInfo .firstChild:hover {
   background-color: white;
+}
+
+.body .right .studentInfo #studentInfo .logoLinks:hover {
+  background: #e0e0e0;
+}
+
+.body .right .studentInfo #studentInfo .logoLinks:nth-child(4) {
+  color: red;
 }
 
 .body .right .studentInfo #studentInfo .fas {
   margin: 1em;
-}
-
-.body .right .studentInfo #studentInfo p:hover {
-  background-color: #f5f5f5;
 }
 
 .body .right .balance, .body .right .hostelInfo {
