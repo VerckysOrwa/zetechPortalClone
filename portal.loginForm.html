@@ -54,6 +54,8 @@
       document.getElementById("login").addEventListener("click",function(){
           let password=document.getElementById("password").value;
           let email=document.getElementById("email").value;
+           const Msg= document.getElementById("successMsg");
+  const btn=document.getElementById("login");
   
           signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
