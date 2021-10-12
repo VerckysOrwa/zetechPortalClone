@@ -10,21 +10,116 @@
 </head>
 <body contextmenu="return false">
     <div class="formHolder">
-    <form action="portal.html" method="get" id="loginForm">
+    <form action="portal.html" id="loginForm" method="get" >
         <img src="Zetech_University_Logo.pdf_ba4c.jpg" alt="image missing" width="28%">
         <h1>Welcome</h1>
         <h3>To login enter your Student Admission No. / Employee Number and Password</h3>
-        <span>Username</span>
-        <input class="input" type="text" placeholder="Enter Student No. /Employee No." required>
-        <span>Password</span>
-        <input class="input" type="password" placeholder="Enter Password" required><br>
-        <button>Login</button>
+        <span><label for="Username">Username</label></span>
+        <input class="input" type="text" placeholder="Enter Student No. /Employee No."required id="email">
+        <span><label for="Password">Password</label></span>
+        <input class="input" type="password" placeholder="Enter Password"required id="password"><br>
+        <button id="login">Login</button>
         <section class="passRecovery">
             <a href="#"><p>Forgot Password?</p></a>
-            <a href="#"><p>Create An Account</p></a>
+            <a href="signup.html"><p>Create An Account</p></a>
         </section>
     </div>
-    </form>
     <footer><p>Created By VerckysInc. &copy;2021</p></footer>
+
+    </form>
+
+    
+<script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+      import { getAuth,signInWithEmailAndPassword,onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+  
+   
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBKd4WdJbzxQD8-9o5AlmL-SIRWLz-r0_o",
+        authDomain: "form-16718.firebaseapp.com",
+        projectId: "form-16718",
+        storageBucket: "form-16718.appspot.com",
+        messagingSenderId: "708127607063",
+        appId: "1:708127607063:web:8f7eb31a060c7023558f52"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+  
+      document.getElementById("login").addEventListener("click",function(){
+          let password=document.getElementById("password").value;
+          let email=document.getElementById("email").value;
+  
+          signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      // ...
+      alert("Logged In");
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+      console.log(errorCode + errorMessage);
+      alert("error")
+    });
+  
+      });
+
+
+  
+    </script>
+
+
+
+    <!--
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+  
+   
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBKd4WdJbzxQD8-9o5AlmL-SIRWLz-r0_o",
+        authDomain: "form-16718.firebaseapp.com",
+        projectId: "form-16718",
+        storageBucket: "form-16718.appspot.com",
+        messagingSenderId: "708127607063",
+        appId: "1:708127607063:web:8f7eb31a060c7023558f52"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+  
+      document.getElementById("login").addEventListener("click",function(){
+          let password=document.getElementById("password").value;
+          let email=document.getElementById("email").value;
+  
+          createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      // ...
+      console.log("Created");
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+      console.log(errorCode + errorMessage);
+    });
+  
+      });
+  
+    </script>
+  -->
+
+
 </body>
 </html>
