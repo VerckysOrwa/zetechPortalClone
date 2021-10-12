@@ -58,21 +58,36 @@
       // Signed in 
       const user = userCredential.user;
       // ...
-      alert("Logged In");
+      //alert("Logged In");
+              Msg.innerText="Login Successfull!";
+    Msg.style.color="#087f23";
+    Msg.style.display="flex";
+Msg.style.alignSelf="center";
+Msg.style.alignItems="center";
+btn.removeEventListener("click",(e)=>{
+    e.preventDefault();
+return true;
+});
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       // ..
       console.log(errorCode + errorMessage);
-      alert("Invalid Credentials");
+     // alert("Invalid Credentials");
+                   Msg.innerText="Error Loging You In! Please Try Again";
+      Msg.style.color="red";
+      Msg.style.display="flex";
+Msg.style.alignSelf="center";
+Msg.style.alignItems="center"
+Msg.style.FontWeight="bold";
+btn.addEventListener("click",(e)=>{
+    e.preventDefault();
+
+});
       
     });
           
- const btn=document.getElementById("login");
-btn.addEventListener("click",(e)=>{
-    e.preventDefault();     
-} 
 });
 
 
