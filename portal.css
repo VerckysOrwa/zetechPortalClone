@@ -417,7 +417,7 @@ header #dropdo {
   width: 90%;
 }
 
-#loginForm {
+#loginForm, #signUpForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,25 +439,25 @@ header #dropdo {
   border-radius: 0.5em;
 }
 
-#loginForm img, #loginForm h1, #loginForm h3, #loginForm input {
+#loginForm img, #signUpForm img, #loginForm h1, #signUpForm h1, #loginForm h3, #signUpForm h3, #loginForm input, #signUpForm input {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-#loginForm h1, #loginForm h3 {
+#loginForm h1, #signUpForm h1, #loginForm h3, #signUpForm h3 {
   margin: 0.2em;
   font-weight: 0;
   text-align: center;
   font-size: 9.5pt;
 }
 
-#loginForm h1 {
+#loginForm h1, #signUpForm h1 {
   font-size: 16pt;
   color: black;
 }
 
-#loginForm input {
+#loginForm input, #signUpForm input {
   height: 2.8em;
   width: 85%;
   border: 1px solid grey;
@@ -485,7 +485,7 @@ span {
   font-size: 11pt;
 }
 
-.passRecovery {
+.passRecovery, .ReturnToLogin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,12 +553,78 @@ footer {
   font-size: 10pt;
 }
 
-.passRecovery a {
+.passRecovery a, .ReturnToLogin a {
   text-decoration: none;
   color: #64b5f6;
 }
 
-.passRecovery a:hover {
+.passRecovery a:hover, .ReturnToLogin a:hover {
   color: #003c8f;
+}
+
+#signUpForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 27%;
+  height: 50em;
+}
+
+#signUpForm input {
+  margin: 0.8em;
+}
+
+#signUpForm button {
+  width: 37%;
+  margin: 2em;
+}
+
+.ReturnToLogin {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  top: -3em;
+}
+
+#roleSelection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 7%;
+}
+
+#roleSelection input {
+  height: 0.9em;
+  margin: 0em;
+  width: 10%;
+}
+
+#roleSelection h2[name="selectrole"] {
+  color: black;
 }
 /*# sourceMappingURL=portal.css.map */
