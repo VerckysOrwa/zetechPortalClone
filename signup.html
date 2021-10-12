@@ -28,6 +28,8 @@
             <button id="signup">Submit</button>
                 <a href="portal.loginForm.html"><p>Return To Login</p></a>
             </section>
+            <span id="successMsg"></span>
+
         </div>
         <footer><p>Created By VerckysInc. &copy;2021</p></footer>
 
@@ -52,7 +54,10 @@
           // Initialize Firebase
           const app = initializeApp(firebaseConfig);
           const auth = getAuth(app);
-      
+          const Msg= document.getElementById("successMsg");
+  const btn=document.getElementById("login");
+  const errormessage="An Error Ocurred While Creating You An Account😕Please Try Again";
+
           document.getElementById("signup").addEventListener("click",()=>{
               let password=document.getElementById("password").value;
               let email=document.getElementById("email").value;
@@ -62,15 +67,24 @@
           // Signed in 
           const user = userCredential.user;
           // ...
-          alert("Account Created Successfully!");
+          Msg.innerText="Account Created Successfully!";
+    Msg.style.color="#087f23";
+    Msg.style.display="flex";
+Msg.style.alignSelf="center";
+Msg.style.alignItems="center";
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
           // ..
           console.log(errorCode + errorMessage);
-          alert("Sign-up Successfull");
-        });
+          Msg.innerText=errormessage;
+      Msg.style.color="red";
+      Msg.style.display="flex";
+Msg.style.alignSelf="center";
+Msg.style.alignItems="center"
+Msg.style.FontWeight="bold"; 
+  });
       
           });
     </script>
