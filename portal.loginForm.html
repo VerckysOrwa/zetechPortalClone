@@ -68,9 +68,13 @@
       alert("Invalid Credentials");
       
     });
-          if(password.value==false){
-              document.getElementById("loginForm").preventDefault()
-          }
+                const btn=document.getElementById("login");
+
+
+          if(password.value!=true){
+btn.addEventListener("click",e=>{
+    e.preventDefault();        
+}
   
       });
 
