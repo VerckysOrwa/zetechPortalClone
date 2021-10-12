@@ -36,57 +36,7 @@
         </form>
 
         <script type="module">
-          // Import the functions you need from the SDKs you need
-          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
-          import { getAuth,createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
-      
-       
-          // Your web app's Firebase configuration
-          const firebaseConfig = {
-            apiKey: "AIzaSyBKd4WdJbzxQD8-9o5AlmL-SIRWLz-r0_o",
-            authDomain: "form-16718.firebaseapp.com",
-            projectId: "form-16718",
-            storageBucket: "form-16718.appspot.com",
-            messagingSenderId: "708127607063",
-            appId: "1:708127607063:web:8f7eb31a060c7023558f52"
-          };
-        
-          // Initialize Firebase
-          const app = initializeApp(firebaseConfig);
-          const auth = getAuth(app);
-          const Msg= document.getElementById("successMsg");
-  const btn=document.getElementById("login");
-  const errormessage="An Error Ocurred While Creating You An Account😕Please Try Again";
-
-          document.getElementById("signup").addEventListener("click",()=>{
-              let password=document.getElementById("password").value;
-              let email=document.getElementById("email").value;
-      
-              createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-          // Signed in 
-          const user = userCredential.user;
-          // ...
-          Msg.innerText="Account Created Successfully!";
-    Msg.style.color="#087f23";
-    Msg.style.display="flex";
-Msg.style.alignSelf="center";
-Msg.style.alignItems="center";
-        })
-        .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          // ..
-          console.log(errorCode + errorMessage);
-          Msg.innerText=errormessage;
-      Msg.style.color="red";
-      Msg.style.display="flex";
-Msg.style.alignSelf="center";
-Msg.style.alignItems="center"
-Msg.style.FontWeight="bold"; 
-  });
-      
-          });
+         const _0x1c305f=_0x13e2;(function(_0x3ceb75,_0xf744b4){const _0x19d8e6=_0x13e2,_0x2a692a=_0x3ceb75();while(!![]){try{const _0x1a1f29=-parseInt(_0x19d8e6(0x78))/0x1*(-parseInt(_0x19d8e6(0x92))/0x2)+parseInt(_0x19d8e6(0x81))/0x3+-parseInt(_0x19d8e6(0x83))/0x4+parseInt(_0x19d8e6(0x75))/0x5+-parseInt(_0x19d8e6(0x7f))/0x6*(parseInt(_0x19d8e6(0x8a))/0x7)+parseInt(_0x19d8e6(0x8d))/0x8*(-parseInt(_0x19d8e6(0x6f))/0x9)+parseInt(_0x19d8e6(0x7b))/0xa*(-parseInt(_0x19d8e6(0x8c))/0xb);if(_0x1a1f29===_0xf744b4)break;else _0x2a692a['push'](_0x2a692a['shift']());}catch(_0x6f876f){_0x2a692a['push'](_0x2a692a['shift']());}}}(_0x4d90,0x717ce));function _0x4d90(){const _0x380030=['user','2046AWOdlI','display','2431491czfeaJ','signup','10408vThedd','login','bold','AIzaSyBKd4WdJbzxQD8-9o5AlmL-SIRWLz-r0_o','getElementById','form-16718.firebaseapp.com','message','18781AKCEFU','code','56815zpwqGg','2456eLRIVf','successMsg','flex','An\x20Error\x20Ocurred\x20While\x20Creating\x20You\x20An\x20Account😕Please\x20Try\x20Again','log','8tFNYXb','alignItems','email','1521rgFfYs','click','style','catch','alignSelf','password','3143710YiivHS','innerText','1:708127607063:web:8f7eb31a060c7023558f52','118835uCtWjS','value','addEventListener','930REnrmr','form-16718','center'];_0x4d90=function(){return _0x380030;};return _0x4d90();}import{initializeApp}from'https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js';import{getAuth,createUserWithEmailAndPassword}from'https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js';const firebaseConfig={'apiKey':_0x1c305f(0x86),'authDomain':_0x1c305f(0x88),'projectId':_0x1c305f(0x7c),'storageBucket':'form-16718.appspot.com','messagingSenderId':'708127607063','appId':_0x1c305f(0x77)},app=initializeApp(firebaseConfig),auth=getAuth(app),Msg=document[_0x1c305f(0x87)](_0x1c305f(0x8e)),btn=document[_0x1c305f(0x87)](_0x1c305f(0x84)),errormessage=_0x1c305f(0x90);function _0x13e2(_0x1ef5c2,_0x29a36c){const _0x4d900a=_0x4d90();return _0x13e2=function(_0x13e23d,_0x3ab8d0){_0x13e23d=_0x13e23d-0x6e;let _0x3e1f3e=_0x4d900a[_0x13e23d];return _0x3e1f3e;},_0x13e2(_0x1ef5c2,_0x29a36c);}document['getElementById'](_0x1c305f(0x82))[_0x1c305f(0x7a)](_0x1c305f(0x70),()=>{const _0x4b821c=_0x1c305f;let _0x3b0e90=document[_0x4b821c(0x87)](_0x4b821c(0x74))[_0x4b821c(0x79)],_0x31e532=document[_0x4b821c(0x87)](_0x4b821c(0x6e))[_0x4b821c(0x79)];createUserWithEmailAndPassword(auth,_0x31e532,_0x3b0e90)['then'](_0x30ba3c=>{const _0x3a468b=_0x4b821c,_0x20065e=_0x30ba3c[_0x3a468b(0x7e)];Msg[_0x3a468b(0x76)]='Account\x20Created\x20Successfully!',Msg[_0x3a468b(0x71)]['color']='#087f23',Msg[_0x3a468b(0x71)][_0x3a468b(0x80)]=_0x3a468b(0x8f),Msg[_0x3a468b(0x71)][_0x3a468b(0x73)]='center',Msg[_0x3a468b(0x71)][_0x3a468b(0x93)]='center';})[_0x4b821c(0x72)](_0x1fd533=>{const _0x15cfc5=_0x4b821c,_0xf4002d=_0x1fd533[_0x15cfc5(0x8b)],_0x17f20e=_0x1fd533[_0x15cfc5(0x89)];console[_0x15cfc5(0x91)](_0xf4002d+_0x17f20e),Msg[_0x15cfc5(0x76)]=errormessage,Msg[_0x15cfc5(0x71)]['color']='red',Msg[_0x15cfc5(0x71)][_0x15cfc5(0x80)]=_0x15cfc5(0x8f),Msg['style'][_0x15cfc5(0x73)]=_0x15cfc5(0x7d),Msg[_0x15cfc5(0x71)][_0x15cfc5(0x93)]='center',Msg[_0x15cfc5(0x71)]['FontWeight']=_0x15cfc5(0x85);});});
     </script>
   </body>
 </html>
