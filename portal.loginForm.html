@@ -66,8 +66,11 @@
       // ..
       console.log(errorCode + errorMessage);
       alert("Invalid Credentials");
-        error.preventDefault();
+      
     });
+          if(password.value==false){
+              document.getElementById("login").preventDefault()
+          }
   
       });
 
